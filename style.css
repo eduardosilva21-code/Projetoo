@@ -1,0 +1,309 @@
+
+/* ========== CONFIGURAÇÕES GERAIS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========== CONTAINER PRINCIPAL ========== */
+.min-h-screen {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* ========== HEADER ========== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: #ffffff;
+}
+
+header span {
+    font-size: 26px;
+    font-weight: 800;
+    color: #4f46e5;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    color: #64748b;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+/* ========== BOTÕES ========== */
+button {
+    border-radius: 9px;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+header button,
+section button:first-child {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+header button:hover,
+section button:first-child:hover {
+    background-color: #3730a3;
+    transform: translateY(-2px);
+}
+
+/* ========== APRESENTAÇÃO PRINCIPAL ========== */
+section {
+    padding: 80px 8%;
+}
+
+section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        #eef2ff 0%,
+        #ffffff 100%
+    );
+}
+
+section h1 {
+    max-width: 850px;
+    color: #0f172a;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+section p {
+    max-width: 650px;
+    margin-top: 22px;
+    color: #64748b;
+    font-size: 17px;
+}
+
+section:first-of-type div {
+    display: flex;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+section:first-of-type button {
+    padding: 14px 24px;
+}
+
+section:first-of-type button:last-child {
+    background-color: #ffffff;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
+
+section:first-of-type button:last-child:hover {
+    background-color: #f1f5f9;
+}
+
+
+/* ========== PLANOS E PREÇOS ========== */
+section:nth-of-type(2) {
+    background: #f8fafc;
+}
+
+section:nth-of-type(2) h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+section:nth-of-type(2) > p {
+    margin: 16px auto 0;
+    text-align: center;
+}
+
+section:nth-of-type(2) > div {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+section:nth-of-type(2) > div > div {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:nth-of-type(2) > div > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(79, 70, 229, 0.12);
+}
+
+section:nth-of-type(2) h3 {
+    font-size: 21px;
+    color: #0f172a;
+}
+
+section:nth-of-type(2) ul {
+    margin-top: 24px;
+    padding-left: 20px;
+    color: #475569;
+}
+
+section:nth-of-type(2) li {
+    margin-bottom: 10px;
+}
+
+section:nth-of-type(2) button {
+    width: 100%;
+    margin-top: 28px;
+    background: #ffffff;
+    color: #4f46e5;
+    border: 1px solid #4f46e5;
+}
+
+section:nth-of-type(2) button:hover {
+    background-color: #eef2ff;
+}
+
+/* ========== CHAMADA PARA AÇÃO ========== */
+section:nth-of-type(3) {
+    text-align: center;
+    background: linear-gradient(120deg, #4f46e5, #312e81);
+}
+
+section:nth-of-type(3) h2 {
+    color: #ffffff;
+    font-size: 34px;
+}
+
+section:nth-of-type(3) p {
+    margin: 18px auto 0;
+    color: #e0e7ff;
+}
+
+section:nth-of-type(3) button {
+    margin-top: 30px;
+    background-color: #ffffff;
+    color: #4338ca;
+    padding: 15px 28px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+section:nth-of-type(3) button:hover {
+    background-color: #eef2ff;
+    transform: translateY(-3px);
+}
+
+/* ========== RODAPÉ ========== */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px 8%;
+    border-top: 1px solid #e2e8f0;
+    background-color: #ffffff;
+}
+
+footer span {
+    font-size: 22px;
+    font-weight: 800;
+    color: #4f46e5;
+}
+
+footer p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    header span {
+        font-size: 22px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    section h1 {
+        font-size: 36px;
+    }
+
+    section:nth-of-type(2) h2,
+    section:nth-of-type(3) h2 {
+        font-size: 28px;
+    }
+
+    section:nth-of-type(2) > div {
+        grid-template-columns: 1fr;
+    }
+
+    section:first-of-type div {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    section:first-of-type button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
